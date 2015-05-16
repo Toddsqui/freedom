@@ -9,6 +9,7 @@
 <body>
 	<header>
 	<div class="col-xs-3">
+	<%= link_to root_path, :class => 'logo' do %>
 	<div class="circle">
   <br />
   MAKE
@@ -17,12 +18,13 @@
   <br />
   STICK
 </div>
+<% end %>
 	</div>
 	<div class="col-xs-4 slogan">
 		Knowledge is power...but only if it sticks!
 	</div>
 	<div class="col-xs-5 links">
-		<%= link_to 'Contribute', '#' %>
+		<%= link_to 'Contribute', new_quote_path %>
 		<%= link_to 'About', '#' %>
 	</div>
 	</header>
@@ -35,7 +37,7 @@
 <div class="footer">
 <div class="container">
 <div class="col-xs-6">
-<%= link_to "This isn't enough, I need more", "#", :class => 'next-quote' %>
+<%= link_to "This isn't enough, I need more", root_path, :class => 'next-quote' %>
 </div>
 <div class="col-xs-6 footer-blurb">
 Proudly hacked in Samcheonpo, South Korea by <a href="http://internationalhustling.co">Todd, International Hustler</a><br />Payback's a bitch.</a><br />
